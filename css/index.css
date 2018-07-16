@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.file {
+  /*
+  Reference: https://codepen.io/giana/pen/BZaGyP
+  */
+
+  background: none;
+  border: 3px solid;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.file {
+  color: #a972cb;
+  transition: 0.5s;
+}
+.file:hover, .file:focus {
+  border-color: #cb72aa;
+  color: #fff;
+}
+
+.file:hover,
+.file:focus {
+  box-shadow: inset 0 0 0 2em #cb72aa;;
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+/*File*/
+.folder {
+  color: #ff8800;
+  transition: 0.5s;
+}
+.folder:hover, .file:focus {
+  border-color: #ffbb55;
+  color: #fff;
+}
+
+.folder:hover,
+.folder:focus {
+  box-shadow: inset 0 0 0 2em #ffbb55;;
+}
+
+.folder {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+/*docx*/
+.docx {
+  color: #0077ff;
+  transition: 0.5s;
+}
+.docx:hover, .file:focus {
+  border-color: #007fc9;
+  color: #fff;
+}
+
+.docx:hover,
+.docx:focus {
+  box-shadow: inset 0 0 0 2em #007fc9;;
+}
+
+.docx {
+  --color: #0077ff;
+  --hover: #007fc9;
+}
+
+/*pptx*/
+.pptx {
+  color: #922e00;
+  transition: 0.5s;
+}
+.pptx:hover, .file:focus {
+  border-color: #914601;
+  color: #fff;
+}
+
+.pptx:hover,
+.pptx:focus {
+  box-shadow: inset 0 0 0 2em #914601;;
+}
+
+.pptx {
+  --color: #922e00;
+  --hover: #914601;
+}
+
+/*xd*/
+.xd {
+  color: #9c0075;
+  transition: 0.5s;
+}
+.xd:hover, .file:focus {
+  border-color: #c00491;
+  color: #fff;
+}
+
+.xd:hover,
+.xd:focus {
+  box-shadow: inset 0 0 0 2em #c00491;;
+}
+
+.xd {
+  --color: #9c0075;
+  --hover: #c00491;
+}
+
+/*mp4*/
+.mp4 {
+  color: #00660e;
+  transition: 0.5s;
+}
+.mp4:hover, .file:focus {
+  border-color: #028513;
+  color: #fff;
+}
+
+.mp4:hover,
+.mp4:focus {
+  box-shadow: inset 0 0 0 2em #028513;;
+}
+
+.mp4 {
+  --color: #00660e;
+  --hover: #028513;
+}
+
+/*ini*/
+.ini {
+  color: #6d6d6d;
+  transition: 0.5s;
+}
+.ini:hover, .file:focus {
+  border-color: #6d6d6d;
+  color: #fff;
+}
+
+.ini:hover,
+.ini:focus {
+  box-shadow: inset 0 0 0 2em #6d6d6d;;
+}
+
+.ini {
+  --color: #6d6d6d;
+  --hover: #6d6d6d;
+}
+
+/*log*/
+.log, .sys {
+  color: #6d6d6d;
+  transition: 0.5s;
+}
+.log, .sys:hover, .file:focus {
+  border-color: #6d6d6d;
+  color: #fff;
+}
+
+.log, .sys:hover,
+.log, .sys:focus {
+  box-shadow: inset 0 0 0 2em #6d6d6d;;
+}
+
+.log, .sys {
+  --color: #6d6d6d;
+  --hover: #6d6d6d;
+}

@@ -1,0 +1,15 @@
+nav {
+    -webkit-app-region: drag;
+    background-color: black;
+    z-index: 1000000;
+}
+
+.navbar-dark {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.window-button {
+    margin-left: 10px;
+    -webkit-app-region: no-drag;
+}

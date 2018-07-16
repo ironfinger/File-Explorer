@@ -1,0 +1,11 @@
+{
+    "extensions": [
+        "docx", 
+        "pptx", 
+        "mp4", 
+        "ini",
+        "xd",
+        "log",
+        "sys"
+    ]
+}

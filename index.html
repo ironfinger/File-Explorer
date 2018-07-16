@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Side Bar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+    
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="css/menuStructure.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/currentDirectory.css">
+    <link rel="stylesheet" type="text/css" href="css/coolButton.css">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+
+      <!--Window Buttons-->
+      <form class="form-inline">  
+        <button type="button" id="min-btn" class="btn btn-outline-warning window-button">-</button>
+        <button type="button" id="max-btn" class="btn btn-outline-success window-button">[]</button>
+        <button type="button" id="close-btn" class="btn btn-outline-danger window-button">X</button>
+      </form>
+    </nav>
+
+    <div id="cont">
+      <div id="menu-fixed">
+        <a href="#cont">
+          <i class="material-icons back">&#xE314;</i>
+        </a>
+        <a href="#menu-fixed">
+          <div class="logo">
+            <span></span>   
+            <p>TITLE</p>
+          </div>
+          <p class="pmenu">MENU</p>
+        </a>
+        <hr>
+        <ul class="menu">
+          <li><i id="documents" class="material-icons">&#xE88A;</i><p>Documents</p></li>
+          <li><i id="downloads" class="material-icons">&#xE87A;</i><p>Downloads</p></li>
+          <li><i class="material-icons">&#xE8CC;</i><p>Shop</p></li>
+          <li><i id="c" class="material-icons">&#xE8B8;</i><p>C:</p></li>
+          <li><i class="material-icons">&#xE8B6;</i><p>Search</p></li>
+        </ul>
+        <i class="material-icons info">&#xE88E;</i>
+      </div>
+    </div>
+      
+      <div id="page">
+
+        <div class="test-working-tree">
+          <div id="test-file-view" class="container">
+            <div class="row">
+              <div class="col-sm file">
+                FILE
+                <p class="file-size">0.0GB</p>
+                <ul>
+                  <li>Something</li>
+                  <li>Something</li>
+                </ul>
+              </div>
+              <div class="col-sm file">
+                FILE
+                <p class="file-size">0.0GB</p>
+                <ul>
+                  <li>Something</li>
+                  <li>Something</li>
+                </ul>
+              </div>
+              <div class="col-sm file">
+                FILE
+                <p class="file-size">0.0GB</p>
+                <ul>
+                  <li>Something</li>
+                  <li>Something</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="working-tree">
+            <div id="file-view" class="container">
+              
+            </div>
+        </div>
+      </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
